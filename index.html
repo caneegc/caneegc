@@ -1,146 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La lámpara de plasma — Introducción</title>
-  <meta name="description" content="Proyecto Feria Científica 2025 — Introducción a la lámpara de plasma">
-
-  <style>
-    /* ======= Estilos (idénticos para todas las páginas) ======= */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html,body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background: #0b1120;
-      color: #e4ecf8;
-      scroll-behavior: smooth;
-    }
-    .wrapper {
-      max-width: 1100px;
-      margin: 32px auto;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.8);
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.05);
-    }
-    header {
-      display: flex; align-items: center; gap: 16px;
-      padding: 24px;
-      background: linear-gradient(90deg, rgba(34,197,94,0.12), rgba(99,102,241,0.12));
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .logo {
-      width: 84px; height: 84px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #fbbf24 15%, #9333ea 100%);
-      display: flex; justify-content: center; align-items: center;
-      font-size: 1.5rem; font-weight: bold; color: #fff;
-      text-shadow: 0 0 5px #000;
-      transition: transform .3s ease;
-    }
-    .logo:hover { transform: rotate(-8deg) scale(1.05); }
-    header h1 { font-size: 1.5rem; }
-    header p { font-size: 0.9rem; opacity: 0.8; }
-
-    nav {
-      background: rgba(255,255,255,0.03);
-      border-radius: 12px;
-      padding: 14px;
-      margin: 16px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    nav a {
-      padding: 10px 16px;
-      color: #e0e9ff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.05);
-      transition: background .3s, transform .2s;
-    }
-    nav a:hover {
-      background: rgba(255,255,255,0.1);
-      transform: translateY(-2px);
-    }
-
-    main {
-      padding: 24px;
-    }
-    section {
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 12px;
-      padding: 20px;
-      line-height: 1.7;
-    }
-    section img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 16px;
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 14px;
-      font-size: 0.85rem;
-      color: #9fb0c8;
-      background: rgba(255,255,255,0.02);
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
-  </style>
+  <title>Lámpara de Plasma Casera</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="logo">LP</div>
-      <div>
-        <h1>La lámpara de plasma</h1>
-        <p>Feria Científica 2025 — Introducción</p>
-      </div>
-    </header>
-
+  <header>
+    <h1>Lámpara de Plasma Casera</h1>
     <nav>
-      <a href="index.html">Introducción</a>
-      <a href="funcion.html">Cómo funcionan</a>
-      <a href="tesla.html">Nikola Tesla</a>
-      <a href="materia.html">Estados de la materia</a>
-      <a href="uso.html">Función y aplicación</a>
-      <a href="materiales.html">Materiales</a>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="recomendaciones.html">Recomendaciones</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-      <section>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Plasma-lamp_2.jpg/1185px-Plasma-lamp_2.jpg" alt="Lámpara de plasma" />
-        <h2>Introducción</h2>
-        <p>
-          La lámpara de plasma es un dispositivo decorativo que permite visualizar el comportamiento del plasma,
-          conocido como el cuarto estado de la materia. Fue inspirada en los experimentos del inventor Nikola Tesla
-          y combina la física de los gases, la electricidad y la tecnología moderna para crear un espectáculo visual
-          seguro y educativo.
-        </p>
-        <p>
-          Dentro del globo se encuentran gases nobles como neón y argón a baja presión. Cuando se aplica una corriente
-          alterna de alta frecuencia, los átomos de gas se ionizan, liberando electrones que producen los brillantes filamentos de luz.
-        </p>
-        <p>
-          Este fenómeno se utiliza para enseñar conceptos como la conducción eléctrica en gases, la ionización, los campos
-          electromagnéticos y la transferencia de energía.
-        </p>
-      </section>
-    </main>
+  <main>
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>
+        La lámpara de plasma es un dispositivo que permite observar los efectos del plasma, el cuarto estado de la materia. 
+        Fue popularizada como objeto decorativo, pero en realidad tiene una base científica muy interesante relacionada con la electricidad y los gases.
+      </p>
+    </section>
 
-    <footer>
-      © 2025 — Proyecto Lámpara de Plasma — Feria Científica — Prof. Dorian Corado
-    </footer>
-  </div>
+    <section id="funcionamiento">
+      <h2>Cómo funcionan</h2>
+      <p>
+        Una lámpara de plasma contiene una mezcla de gases nobles (neón, argón o xenón) en su interior. 
+        Cuando se aplica una corriente alterna de alto voltaje en el electrodo central, los átomos del gas se ionizan, 
+        liberando electrones que generan descargas luminosas visibles como filamentos de colores. 
+        Al tocar el vidrio, el campo eléctrico cambia y los filamentos se concentran en el punto de contacto.
+      </p>
+    </section>
+
+    <section id="nikola-tesla">
+      <h2>Nikola Tesla</h2>
+      <p>
+        Nikola Tesla fue el inventor del primer dispositivo similar a la lámpara de plasma, llamado “tubo de descarga de gas”. 
+        A finales del siglo XIX, Tesla experimentó con corrientes alternas de alta frecuencia y voltaje, lo que le permitió observar el comportamiento de gases ionizados. 
+        Sus investigaciones fueron la base para entender la conducción eléctrica a través del aire y el funcionamiento de dispositivos modernos como los tubos fluorescentes o los televisores antiguos.
+      </p>
+    </section>
+
+    <section id="estados-materia">
+      <h2>Estados de la materia</h2>
+      <p>
+        Tradicionalmente se reconocen tres estados de la materia: sólido, líquido y gaseoso. 
+        Sin embargo, existe un cuarto estado: el <strong>plasma</strong>. 
+        Este se forma cuando un gas recibe suficiente energía como para separar los electrones de los átomos, generando una mezcla de partículas cargadas. 
+        El plasma está presente en fenómenos naturales como los relámpagos o el Sol, y en aplicaciones tecnológicas como pantallas y lámparas.
+      </p>
+    </section>
+
+    <section id="funcion-aplicacion">
+      <h2>Función y aplicación</h2>
+      <p>
+        Aunque las lámparas de plasma se utilizan principalmente con fines decorativos o educativos, 
+        su funcionamiento ilustra principios importantes de la física, como la ionización de gases y el comportamiento de campos eléctricos. 
+        En la ciencia y la industria, el plasma tiene aplicaciones en soldadura, generación de energía, fabricación de semiconductores y esterilización de materiales.
+      </p>
+    </section>
+
+    <section id="materiales">
+      <h2>Materiales</h2>
+      <ul>
+        <li>Una lámpara de plasma comercial (puede ser de escritorio o decorativa).</li>
+        <li>Superficie estable y no conductora (madera o plástico).</li>
+        <li>Extensión eléctrica en buen estado.</li>
+        <li>Guantes y calzado aislante (recomendado).</li>
+        <li>Objetos de prueba: tubos fluorescentes, bombillas, papel aluminio, etc.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto educativo sobre la Lámpara de Plasma © 2025</p>
+  </footer>
 </body>
 </html>
+
 
 
 
